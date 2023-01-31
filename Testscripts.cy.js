@@ -25,9 +25,12 @@ describe("home page", () => {
     //expect($heading.text().to.eq("Personal Details"));  
 
     //search an element from search bar    
-    var c=cy.get('.oxd-input').eq('1').click();
+    
+    var c=cy.get('.oxd-input').eq('2').click();
     var d=c.type('Time').click();
     })
     })
     
-  //})
+ 
+ //})
+
