@@ -9,7 +9,7 @@ describe("Assertions Practice", () => {
       .should('contain','Apply')
       .should('have.class','cta-tracker btn btn-xs btn-nav-promo',{setTimeout:70000})
       .should('be.visible')
-      .should('be.enabled',{setTimeout:70000})
+      .should('be.enabled',{setTimeout:60000})
       cy.get('#cta-primary-about').invoke('attr','id').should('equal','cta-primary-about')
      
 
