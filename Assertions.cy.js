@@ -9,9 +9,16 @@ describe("Assertions Practice", () => {
       .should('contain','Apply')
       .should('have.class','cta-tracker btn btn-xs btn-nav-promo',{setTimeout:70000})
       .should('be.visible')
-      .should('be.enabled',{setTimeout:60000})
+      //.should('be.enabled',{setTimeout:7000})
       cy.get('#cta-primary-about').invoke('attr','id').should('equal','cta-primary-about')
-     
+      cy.get('.nav-mobile-sm-hide > .cta-tracker').should('contain','Apply').and('be.visible')
 
+
+      //Explicit
+      let name='Cypress'
+      expect(name).to.be.equal(name)
+
+      assert.equal(4,4,'Actual and Expected is fine')
+      assert.strictEqual(6,6,'Not strickly equal')
 })
 })

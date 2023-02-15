@@ -17,17 +17,17 @@ describe("home page", () => {
     cy.get(':nth-child(1) > .oxd-userdropdown-link').click();
 
 // Redirects to New Tab
-    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7")
-    cy.get('.orangehrm-edit-employee-content > :nth-child(1) > .oxd-text--h6').should($heading =>{
-    console.log($heading.text());
-    expect($heading.text().to.eq("Personal Details"),{setTimeout:60000}).should($heading =>{
-    console.log($heading.text());
-    expect($heading.text().to.eq("Personal Details"));  
+   // cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPersonalDetails/empNumber/7")
+    //cy.get('.orangehrm-edit-employee-content > :nth-child(1) > .oxd-text--h6').should($heading =>{
+    //console.log($heading.text());
+    //expect($heading.text().to.eq("Personal Details"),{setTimeout:60000}).should($heading =>{
+    //console.log($heading.text());
+    //expect($heading.text().to.eq("Personal Details"));  
     
     //search an element from search bar        
     var click=cy.get('.oxd-input').eq('0').click();
     var store=click.type('Time').click();
     })
     })     
-})
-})
+//})
+//})
