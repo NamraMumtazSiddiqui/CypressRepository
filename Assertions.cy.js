@@ -13,12 +13,11 @@ describe("Assertions Practice", () => {
       cy.get('#cta-primary-about').invoke('attr','id').should('equal','cta-primary-about')
       cy.get('.nav-mobile-sm-hide > .cta-tracker').should('contain','Apply').and('be.visible')
 
-
       //Explicit
       let name='Cypress'
       expect(name).to.be.equal(name)
 
       assert.equal(4,4,'Actual and Expected is fine')
-      assert.strictEqual(6,6,'Not strickly equal')
+      assert.strictEqual(6,46,'Not strickly equal')
 })
 })
