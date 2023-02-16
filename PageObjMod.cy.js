@@ -1,11 +1,11 @@
-// A design principle which says we should keep separate methods and onjects from test script
+// A design principle which says we should keep separate methods and objects from test script
 
 import  {LoginPage} from "../Pages/Newfile.cy.js";
 const lp=new LoginPage()
 
 it('Simplelogin',function ()
 {
-    lp.navigate();
+    lp.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     lp.username();
     lp.password();
     lp.Loginbutton();
