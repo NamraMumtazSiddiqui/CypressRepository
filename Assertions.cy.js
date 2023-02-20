@@ -2,7 +2,7 @@
 //Explicit commands are not built in assertions which include expect() and assert();
 
 describe("Assertions Practice", () => {
-    it("Simple Assertion", () => {
+    it("Simple Assertion Test", () => {
       cy.visit("https://www.lonestar.edu/testing-cypress.htm");
       cy.contains('Schedule An Appointment').click()
       cy.get('.nav-mobile-sm-hide > .cta-tracker')
